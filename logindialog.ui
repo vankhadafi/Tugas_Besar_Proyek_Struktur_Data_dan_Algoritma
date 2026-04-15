@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginDialog</class>
+ <widget class="QDialog" name="LoginDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>340</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login - Playbook Sepak Bola</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>15</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>15</number>
+   </property>
+
+   <!-- Judul -->
+   <item>
+    <widget class="QLabel" name="lblJudul">
+     <property name="text">
+      <string>LOGIN SISTEM PLAYBOOK SEPAK BOLA</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string>font-size: 13px; font-weight: bold; color: #1a5276; padding: 8px; background-color: #d6eaf8; border-radius: 4px;</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Pilih Role -->
+   <item>
+    <widget class="QLabel" name="label_role">
+     <property name="text">
+      <string>Masuk Sebagai :</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="cmbRole"/>
+   </item>
+
+   <!-- Username -->
+   <item>
+    <widget class="QLabel" name="label_user">
+     <property name="text">
+      <string>Username :</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="txtUsername"/>
+   </item>
+
+   <!-- Password -->
+   <item>
+    <widget class="QLabel" name="label_pass">
+     <property name="text">
+      <string>Password :</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="txtPassword"/>
+   </item>
+
+   <!-- Hint akun -->
+   <item>
+    <widget class="QLabel" name="lblHint">
+     <property name="text">
+      <string>Username: admin | Password: admin123</string>
+     </property>
+     <property name="styleSheet">
+      <string>color: #117a65; font-size: 11px; background-color: #e8f8f5; padding: 4px; border-radius: 3px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Tombol Login dan Batal -->
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_btn">
+     <item>
+      <widget class="QPushButton" name="btnLogin">
+       <property name="text">
+        <string>Login</string>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #2ecc71; color: white; font-weight: bold; padding: 6px; border-radius: 3px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnBatal">
+       <property name="text">
+        <string>Batal / Keluar</string>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #e74c3c; color: white; padding: 6px; border-radius: 3px;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
